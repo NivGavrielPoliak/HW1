@@ -1,12 +1,12 @@
 public class Assignment01Q01 {
     public static void main(String[] args) {
-        int LastAscii = 32;
-        for (char ch: args[0].toCharArray()) {
+        for (String st: args) 
+        {
+            char ch = st.charAt(0);
             int CurrAscii = (int) ch;
-            if(CurrAscii%5 == 0 && LastAscii == 32) {
+            if(CurrAscii%5 == 0) {
                 System.out.println(ch);
-            }        
-            LastAscii = CurrAscii;
+            }       
         }
     }
 }
